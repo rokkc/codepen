@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Live Editor</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/dracula.min.css" />
+  
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="container">
+    
+    <div class="editor-container">
+      
+      <div class="editor-wrapper" id="wrapper-html">
+        <div class="editor-header">HTML</div>
+        <textarea id="html" placeholder="HTML"></textarea>
+      </div>
+      <div class="vertical-resizer"></div>
+      
+      <div class="editor-wrapper" id="wrapper-css">
+        <div class="editor-header">CSS</div>
+        <textarea id="css" placeholder="CSS"></textarea>
+      </div>
+      <div class="vertical-resizer"></div>
+      
+      <div class="editor-wrapper" id="wrapper-js">
+        <div class="editor-header">JavaScript</div>
+        <textarea id="js" placeholder="JavaScript"></textarea>
+      </div>
+    </div>
+    
+    <div id="resizer"></div>
+    
+    <div class="preview-container">
+      <iframe id="preview" sandbox="allow-scripts allow-same-origin"></iframe>
+    </div>
+  </div>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/xml/xml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/css/css.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/htmlmixed/htmlmixed.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/closebrackets.min.js"></script>
+
+  
+  <script src="index.js"></script>
+</body>
+</html>
